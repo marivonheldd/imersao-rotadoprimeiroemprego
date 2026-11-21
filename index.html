@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imersão Rota do Primeiro Emprego na Enfermagem | Mariana Von Held</title>
+<meta name="description" content="Um dia para você se preparar para conquistar seu primeiro emprego na enfermagem. 12/12, ao vivo, das 09h às 17h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   CONFIGURAÇÕES RÁPIDAS → veja o <script> no fim do arquivo
+   (link de compra, prazo do valor promocional, nº de prints)
+   ========================================================= */
+:root{
+  --navy:#0A122A;
+  --navy-2:#111b3d;
+  --navy-3:#1a2650;
+  --red:#AB2346;
+  --red-2:#c42d55;
+  --light:#E6E8E6;
+  --white:#ffffff;
+  --muted:#9aa2b8;
+  --radius:18px;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Manrope', system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--sans);background:var(--navy);color:var(--light);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(1140px,92%);margin-inline:auto}
+section{padding:96px 0;position:relative}
+
+h1,h2,h3{font-family:var(--serif);line-height:1.12;color:var(--white);letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:18px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red-2);margin-bottom:16px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red)}
+.lead{font-size:1.12rem;color:#c9cdd6;max-width:640px}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+.center .eyebrow::after{content:"";width:28px;height:2px;background:var(--red)}
+em.hl{font-style:normal;color:var(--red-2)}
+
+/* ---------- Botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:var(--white);font-family:var(--sans);font-weight:800;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:18px 34px;border-radius:999px;border:none;cursor:pointer;box-shadow:0 10px 30px -10px rgba(171,35,70,.8);transition:transform .2s, box-shadow .2s, background .2s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-3px);background:var(--red-2);box-shadow:0 16px 40px -12px rgba(171,35,70,.95)}
+.btn .arrow{transition:transform .2s}
+.btn:hover .arrow{transform:translateX(4px)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-100%);animation:shine 3.5s infinite}
+@keyframes shine{0%,60%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.btn-light{background:var(--light);color:var(--navy);box-shadow:none}
+.btn-light:hover{background:var(--white)}
+
+/* ---------- Barra de contagem (topo) ---------- */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--red);color:var(--white);font-size:.9rem;font-weight:700;text-align:center;padding:9px 12px;transform:translateY(-100%);transition:transform .4s}
+.topbar.show{transform:none}
+.topbar a{margin-left:10px;background:var(--white);color:var(--red);padding:3px 12px;border-radius:999px;text-decoration:none;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+.topbar .t{font-variant-numeric:tabular-nums;background:rgba(0,0,0,.18);padding:2px 8px;border-radius:6px}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 20%, rgba(171,35,70,.28), transparent 70%),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(230,232,230,.06), transparent 70%),
+    var(--navy)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(230,232,230,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(230,232,230,.04) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 75%)}
+.hero .container{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.badge-date{display:inline-flex;gap:12px;align-items:center;border:1px solid rgba(230,232,230,.18);background:rgba(230,232,230,.05);border-radius:999px;padding:8px 18px 8px 8px;font-weight:700;font-size:.9rem;margin-bottom:28px}
+.badge-date span.dot{background:var(--red);color:#fff;border-radius:999px;padding:4px 12px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
+.badge-date span.dot::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.1rem);font-weight:800;margin-bottom:24px}
+.hero h1 .u{position:relative;white-space:nowrap;color:var(--light)}
+.hero h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--red);z-index:-1;transform-origin:left;animation:grow 1s .6s both}
+@keyframes grow{from{transform:scaleX(0)}}
+.hero .lead{margin-bottom:36px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;color:var(--muted);font-size:.92rem;font-weight:600}
+.hero-meta div{display:flex;align-items:center;gap:8px}
+.hero-meta svg{color:var(--red-2)}
+
+.hero-card{background:linear-gradient(160deg,var(--navy-3),var(--navy-2));border:1px solid rgba(230,232,230,.12);border-radius:24px;padding:34px 30px;position:relative;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);transform:rotate(2deg);transition:transform .4s}
+.hero-card:hover{transform:rotate(0) translateY(-6px)}
+.hero-card .cal{display:flex;align-items:stretch;gap:18px;margin-bottom:24px}
+.hero-card .day{background:var(--red);border-radius:14px;padding:12px 18px;text-align:center;color:#fff}
+.hero-card .day b{display:block;font-family:var(--serif);font-size:2.6rem;line-height:1}
+.hero-card .day small{font-weight:800;letter-spacing:.15em;font-size:.72rem}
+.hero-card .when{display:flex;flex-direction:column;justify-content:center;font-weight:700;color:var(--white)}
+.hero-card .when span{color:var(--muted);font-weight:500;font-size:.9rem}
+.hero-card ul{list-style:none;display:grid;gap:12px;margin-bottom:24px}
+.hero-card li{display:flex;gap:10px;font-size:.95rem}
+.hero-card li::before{content:"✓";color:var(--red-2);font-weight:900}
+.hero-card .price{border-top:1px dashed rgba(230,232,230,.2);padding-top:20px;display:flex;align-items:baseline;gap:12px}
+.hero-card .price s{color:var(--muted)}
+.hero-card .price b{font-family:var(--serif);font-size:2.4rem;color:var(--white)}
+.hero-card .stamp{position:absolute;top:-18px;right:-14px;background:var(--light);color:var(--navy);font-weight:800;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:999px;transform:rotate(8deg)}
+
+/* ---------- Problema ---------- */
+.problem{background:var(--light);color:var(--navy)}
+.problem h2,.problem h3{color:var(--navy)}
+.problem .lead{color:#3a4258}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.fears{display:grid;gap:14px;margin-top:26px}
+.fear{background:var(--white);border-left:4px solid var(--red);border-radius:12px;padding:16px 20px;font-weight:600;box-shadow:0 6px 18px -10px rgba(10,18,42,.25);transition:transform .25s}
+.fear:hover{transform:translateX(6px)}
+.quote-big{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2rem);font-weight:700;color:var(--navy);line-height:1.25;margin-top:30px}
+.quote-big em{font-style:normal;color:var(--red)}
+.stats{display:grid;gap:22px}
+.stat{background:var(--navy);color:var(--light);border-radius:var(--radius);padding:32px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:rgba(171,35,70,.25)}
+.stat .num{font-family:var(--serif);font-size:clamp(3rem,6vw,4.4rem);font-weight:800;color:var(--white);line-height:1;font-variant-numeric:tabular-nums}
+.stat .num small{font-size:.5em;color:var(--red-2)}
+.stat p{margin-top:10px;color:#c9cdd6;position:relative;z-index:1}
+.stat .bar{height:6px;background:rgba(230,232,230,.12);border-radius:6px;margin-top:18px;overflow:hidden}
+.stat .bar i{display:block;height:100%;width:0;background:var(--red);border-radius:6px;transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.src{font-size:.78rem;color:#6b7287;margin-top:6px}
+
+/* ---------- Faixa ---------- */
+.band{background:var(--red);padding:38px 0;overflow:hidden}
+.band p{font-family:var(--serif);font-size:clamp(1.3rem,3vw,2.1rem);font-weight:800;color:#fff;text-align:center;line-height:1.25}
+
+/* ---------- Antes x Depois ---------- */
+.toggle{display:inline-flex;background:var(--navy-2);border:1px solid rgba(230,232,230,.12);border-radius:999px;padding:6px;margin:30px auto 40px;position:relative}
+.toggle button{position:relative;z-index:1;background:none;border:none;color:var(--muted);font-family:var(--sans);font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:12px 26px;border-radius:999px;cursor:pointer;transition:color .3s}
+.toggle button.on{color:#fff}
+.toggle .pill{position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 6px);border-radius:999px;background:var(--red);transition:transform .35s cubic-bezier(.4,1.4,.5,1)}
+.toggle.after .pill{transform:translateX(100%)}
+.ba-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ba{border-radius:var(--radius);padding:36px;border:1px solid rgba(230,232,230,.1);transition:opacity .4s, transform .4s, filter .4s}
+.ba h3{font-size:1.4rem;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.ba ul{list-style:none;display:grid;gap:14px}
+.ba li{display:flex;gap:12px;align-items:flex-start}
+.ba li .ic{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;font-weight:900;margin-top:2px}
+.ba.before{background:rgba(230,232,230,.03)}
+.ba.before .ic{background:rgba(230,232,230,.1);color:var(--muted)}
+.ba.before li{color:#aab0c0}
+.ba.after{background:linear-gradient(160deg,var(--navy-3),var(--navy-2));border-color:rgba(171,35,70,.5);box-shadow:0 30px 60px -30px rgba(171,35,70,.5)}
+.ba.after .ic{background:var(--red);color:#fff}
+.ba-wrap.focus-before .ba.after,.ba-wrap.focus-after .ba.before{opacity:.35;filter:grayscale(.6);transform:scale(.97)}
+
+/* ---------- Carrossel de feedbacks ---------- */
+.results{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%)}
+.carousel{position:relative;margin-top:50px}
+.viewport{overflow:hidden;border-radius:var(--radius)}
+.track{display:flex;transition:transform .6s cubic-bezier(.65,0,.35,1);will-change:transform}
+.page{flex:0 0 100%;display:grid;grid-template-columns:repeat(var(--per,3),1fr);gap:24px;padding:6px}
+.shot{background:var(--light);border-radius:16px;padding:12px;display:flex;align-items:center;justify-content:center;height:460px;box-shadow:0 20px 40px -24px rgba(0,0,0,.8);transition:transform .3s;cursor:zoom-in}
+.shot:hover{transform:translateY(-6px)}
+.shot img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:10px}
+.shot .ph{width:100%;height:100%;border:2px dashed #b5bac4;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#6b7287;font-size:.85rem;text-align:center;padding:14px}
+.shot .ph svg{color:var(--red)}
+.shot .ph code{background:#d6d9dd;padding:2px 8px;border-radius:6px;font-size:.78rem}
+.c-nav{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:30px}
+.c-btn{width:52px;height:52px;border-radius:50%;border:1px solid rgba(230,232,230,.25);background:transparent;color:var(--light);cursor:pointer;display:grid;place-items:center;transition:background .2s, border-color .2s}
+.c-btn:hover{background:var(--red);border-color:var(--red)}
+.dots{display:flex;gap:10px}
+.dots button{width:10px;height:10px;border-radius:999px;border:none;background:rgba(230,232,230,.25);cursor:pointer;transition:width .3s, background .3s;padding:0}
+.dots button.on{width:32px;background:var(--red)}
+.lightbox{position:fixed;inset:0;background:rgba(5,9,22,.92);z-index:90;display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-height:88vh;max-width:min(92vw,560px);border-radius:12px}
+
+/* ---------- Módulos ---------- */
+.modules{background:var(--light);color:var(--navy)}
+.modules h2,.modules h3{color:var(--navy)}
+.modules .lead{color:#3a4258}
+.mod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:54px}
+.mod{background:var(--white);border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden;transition:transform .3s, box-shadow .3s;border:1px solid rgba(10,18,42,.06)}
+.mod::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.mod:hover{transform:translateY(-8px);box-shadow:0 30px 50px -28px rgba(10,18,42,.45)}
+.mod:hover::before{transform:scaleX(1)}
+.mod .n{font-family:var(--serif);font-size:3.2rem;font-weight:800;color:rgba(171,35,70,.16);line-height:1;position:absolute;right:18px;top:14px}
+.mod .icon{width:54px;height:54px;border-radius:14px;background:var(--navy);color:var(--light);display:grid;place-items:center;margin-bottom:22px}
+.mod h3{font-size:1.25rem;margin-bottom:10px}
+.mod p{font-size:.95rem;color:#4a5268}
+
+/* ---------- Para quem ---------- */
+.forwho-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.forwho-grid .sticky{position:sticky;top:110px}
+.checks{display:grid;gap:14px}
+.check{display:flex;gap:16px;align-items:flex-start;background:var(--navy-2);border:1px solid rgba(230,232,230,.08);border-radius:14px;padding:18px 20px;transition:border-color .25s, background .25s}
+.check:hover{border-color:rgba(171,35,70,.6);background:var(--navy-3)}
+.check .ic{flex:none;width:28px;height:28px;border-radius:8px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.85rem}
+
+/* ---------- Professora ---------- */
+.teacher{background:var(--navy-2)}
+.teacher-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+.photo-frame{position:relative;max-width:420px;margin-inline:auto;width:100%}
+.photo-frame::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:2px solid var(--red);border-radius:24px}
+.photo{position:relative;aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:var(--navy-3)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);text-align:center;padding:20px;border:2px dashed rgba(230,232,230,.25);border-radius:24px}
+.photo .ph code{background:rgba(230,232,230,.1);padding:3px 10px;border-radius:6px;font-size:.82rem;color:var(--light)}
+.photo-tag{position:absolute;left:-18px;bottom:28px;background:var(--light);color:var(--navy);border-radius:14px;padding:14px 18px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);z-index:2}
+.photo-tag b{font-family:var(--serif);font-size:1.8rem;display:block;line-height:1;color:var(--red)}
+.photo-tag span{font-size:.8rem;font-weight:700}
+.teacher h2 small{display:block;font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--red-2);margin-top:8px;letter-spacing:0}
+.teacher p{color:#c9cdd6;margin-bottom:18px}
+.creds{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 34px}
+.creds div{border:1px solid rgba(230,232,230,.15);border-radius:12px;padding:12px 16px;min-width:130px}
+.creds b{font-family:var(--serif);font-size:1.6rem;color:var(--white);display:block;line-height:1.1}
+.creds span{font-size:.82rem;color:var(--muted);font-weight:600}
+
+/* ---------- Oferta / Ingresso ---------- */
+.offer{background:
+    radial-gradient(ellipse 50% 60% at 50% 0%, rgba(171,35,70,.25), transparent 70%), var(--navy)}
+.ticket{display:grid;grid-template-columns:1.2fr .8fr;max-width:900px;margin:54px auto 0;border-radius:24px;overflow:hidden;box-shadow:0 50px 100px -40px rgba(0,0,0,.9);position:relative}
+.ticket-main{background:var(--light);color:var(--navy);padding:44px 40px;position:relative}
+.ticket-main h3{color:var(--navy);font-size:1.6rem;margin-bottom:6px}
+.ticket-main .sub{color:#4a5268;font-weight:600;margin-bottom:26px}
+.ticket-main ul{list-style:none;display:grid;gap:14px}
+.ticket-main li{display:flex;gap:12px;align-items:center;font-weight:600}
+.ticket-main li .ic{width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--light);display:grid;place-items:center;flex:none}
+.ticket-info{display:flex;gap:26px;margin-top:30px;padding-top:24px;border-top:2px dashed rgba(10,18,42,.2);font-size:.85rem}
+.ticket-info b{display:block;font-size:1rem}
+.ticket-stub{background:var(--red);color:#fff;padding:44px 34px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;border-left:3px dashed rgba(255,255,255,.45)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:60%;width:36px;height:36px;border-radius:50%;background:var(--navy);transform:translateX(-50%);z-index:2}
+.ticket::before{top:-18px}.ticket::after{bottom:-18px}
+.ticket-stub .lote{background:rgba(0,0,0,.2);padding:6px 14px;border-radius:999px;font-weight:800;font-size:.75rem;letter-spacing:.14em;margin-bottom:16px}
+.ticket-stub s{opacity:.8;font-weight:600}
+.ticket-stub .pr{font-family:var(--serif);font-size:4.4rem;font-weight:800;line-height:1;margin:6px 0 4px}
+.ticket-stub .pr sup{font-size:.35em;vertical-align:top;position:relative;top:.5em;margin-right:4px}
+.ticket-stub .save{font-size:.85rem;font-weight:700;margin-bottom:24px}
+.ticket-stub .btn{background:var(--white);color:var(--red);box-shadow:0 10px 30px -10px rgba(0,0,0,.5);width:100%;padding:16px 20px;font-size:.92rem}
+.ticket-stub .btn:hover{background:var(--light)}
+.offer-timer{display:flex;justify-content:center;gap:14px;margin-top:40px}
+.offer-timer .u{background:var(--navy-2);border:1px solid rgba(230,232,230,.12);border-radius:14px;min-width:86px;padding:14px 10px;text-align:center}
+.offer-timer b{font-family:var(--serif);font-size:2.2rem;color:var(--white);display:block;line-height:1;font-variant-numeric:tabular-nums}
+.offer-timer span{font-size:.72rem;font-weight:800;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.offer-note{text-align:center;color:var(--muted);margin-top:14px;font-size:.92rem}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--light);color:var(--navy)}
+.faq h2{color:var(--navy)}
+.faq-list{max-width:820px;margin:48px auto 0;display:grid;gap:12px}
+.qa{background:var(--white);border-radius:14px;border:1px solid rgba(10,18,42,.08);overflow:hidden;transition:box-shadow .3s}
+.qa.open{box-shadow:0 20px 40px -26px rgba(10,18,42,.45)}
+.qa button{width:100%;background:none;border:none;text-align:left;font-family:var(--sans);font-size:1.04rem;font-weight:700;color:var(--navy);padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer}
+.qa .plus{flex:none;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;transition:transform .35s, background .3s;font-size:1.2rem;line-height:1}
+.qa.open .plus{transform:rotate(45deg);background:var(--red)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}
+.qa.open .ans{grid-template-rows:1fr}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{padding:0 24px 22px;color:#4a5268}
+
+/* ---------- CTA final ---------- */
+.final{text-align:center;padding:110px 0;background:
+  radial-gradient(ellipse 60% 70% at 50% 120%, rgba(171,35,70,.45), transparent 70%), var(--navy)}
+.final h2{max-width:860px;margin:0 auto 22px;font-size:clamp(1.7rem,3.6vw,2.6rem)}
+.final .lead{margin:0 auto 38px}
+footer{border-top:1px solid rgba(230,232,230,.08);padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem}
+
+/* ---------- Pop-up de tempo ---------- */
+.modal-bg{position:fixed;inset:0;background:rgba(5,9,22,.78);backdrop-filter:blur(4px);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .35s}
+.modal-bg.open{opacity:1;pointer-events:auto}
+.modal{background:var(--light);color:var(--navy);border-radius:24px;max-width:470px;width:100%;padding:40px 34px 34px;text-align:center;position:relative;transform:translateY(30px) scale(.95);transition:transform .45s cubic-bezier(.3,1.4,.5,1);overflow:hidden}
+.modal-bg.open .modal{transform:none}
+.modal::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--red)}
+.modal .x{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;border:none;background:rgba(10,18,42,.08);color:var(--navy);font-size:1.3rem;cursor:pointer;line-height:1}
+.modal .x:hover{background:rgba(10,18,42,.16)}
+.modal .clock{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--light);display:grid;place-items:center;margin:0 auto 18px;animation:wiggle 2s infinite}
+@keyframes wiggle{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-12deg)}90%{transform:rotate(12deg)}95%{transform:rotate(-6deg)}}
+.modal h3{color:var(--navy);font-size:1.55rem;margin-bottom:8px}
+.modal p{color:#4a5268;margin-bottom:22px}
+.modal p b{color:var(--red)}
+.m-timer{display:flex;justify-content:center;gap:10px;margin-bottom:26px}
+.m-timer .u{background:var(--navy);color:#fff;border-radius:12px;min-width:66px;padding:12px 6px}
+.m-timer b{font-family:var(--serif);font-size:2rem;display:block;line-height:1;font-variant-numeric:tabular-nums}
+.m-timer span{font-size:.65rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.modal .btn{width:100%}
+.modal .later{background:none;border:none;color:#6b7287;font-family:var(--sans);font-weight:600;margin-top:14px;cursor:pointer;text-decoration:underline;font-size:.88rem}
+
+/* ---------- Botão flutuante (mobile) ---------- */
+.float-cta{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none}
+.float-cta .btn{width:100%;padding:16px}
+
+/* ---------- Animação de entrada ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ---------- Responsivo ---------- */
+@media (max-width:980px){
+  .hero .container,.problem-grid,.forwho-grid,.teacher-grid{grid-template-columns:1fr}
+  .hero-card{max-width:440px;transform:none}
+  .mod-grid{grid-template-columns:1fr 1fr}
+  .forwho-grid .sticky{position:static}
+  .teacher-grid{gap:56px}
+}
+@media (max-width:720px){
+  section{padding:72px 0}
+  .ba-wrap{grid-template-columns:1fr}
+  .ba-wrap.focus-before .ba.after,.ba-wrap.focus-after .ba.before{display:none}
+  .mod-grid{grid-template-columns:1fr}
+  .ticket{grid-template-columns:1fr}
+  .ticket-stub{border-left:none;border-top:3px dashed rgba(255,255,255,.45)}
+  .ticket::before,.ticket::after{display:none}
+  .ticket-main{padding:34px 26px}
+  .shot{height:440px}
+  .offer-timer .u{min-width:68px}
+  .float-cta.show{display:block}
+  .topbar a{display:none}
+  .photo-tag{left:0}
+  .photo-frame{width:88%}
+  .btn{padding:17px 26px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- Barra fixa com contagem -->
+<div class="topbar" id="topbar">
+  ⏰ Valor promocional de <b>R$ 19</b> termina em <span class="t" data-timer="compact">--:--:--</span>
+  <a href="#ingresso">Garantir</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="container">
+    <div>
+      <div class="badge-date reveal"><span class="dot">Ao vivo</span> 12/12 · das 09h às 17h · Google Meet</div>
+      <span class="eyebrow reveal d1">Imersão Rota do Primeiro Emprego na Enfermagem</span>
+      <h1 class="reveal d1">Um dia para você se preparar para conquistar seu <span class="u">primeiro emprego</span> na enfermagem</h1>
+      <p class="lead reveal d2">Aprenda de forma prática e descomplicada como estruturar seu currículo, se preparar para entrevistas, encontrar e se candidatar às melhores oportunidades — e saber o que estudar para enfrentar provas teóricas e avaliações práticas com muito mais segurança.</p>
+      <div class="reveal d3"><a href="#ingresso" class="btn">Eu quero! <span class="arrow">→</span></a></div>
+      <div class="hero-meta reveal d4">
+        <div><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>+ de 8h de conteúdo</div>
+        <div><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg>Tira-dúvidas ao vivo</div>
+        <div><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg>Materiais complementares</div>
+      </div>
+    </div>
+    <aside class="hero-card reveal d2">
+      <div class="stamp">Lote 1</div>
+      <div class="cal">
+        <div class="day"><b>12</b><small>DEZ</small></div>
+        <div class="when">Imersão ao vivo<span>09h às 17h · Google Meet</span></div>
+      </div>
+      <ul>
+        <li>Currículo para o primeiro emprego</li>
+        <li>Plataformas e candidaturas</li>
+        <li>Entrevistas com RH e gestor</li>
+        <li>Provas teóricas e práticas</li>
+      </ul>
+      <div class="price"><s>R$ 197</s><b>R$ 19</b></div>
+    </aside>
+  </div>
+</header>
+
+<!-- ================= PROBLEMA ================= -->
+<section class="problem">
+  <div class="container problem-grid">
+    <div class="reveal">
+      <span class="eyebrow">Seja honesto(a)</span>
+      <h2>E se você chegasse ao seu primeiro processo seletivo sabendo exatamente o que esperar?</h2>
+      <p class="lead">A maioria chega sem saber. Tem formação, cursos e vontade de trabalhar, mas não sabe como se apresentar ou se preparar. E aí surgem os medos:</p>
+      <div class="fears">
+        <div class="fear">😰 Não ter experiência</div>
+        <div class="fear">🫥 Travar na entrevista</div>
+        <div class="fear">📋 Errar uma prova prática</div>
+        <div class="fear">🤔 “Será que estou preparado(a)?”</div>
+      </div>
+      <p class="quote-big">O problema muitas vezes não é falta de capacidade. É <em>não saber como se preparar para ser escolhido.</em></p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal d1">
+        <div class="num"><span data-count="83.5" data-dec="1">0</span><small>%</small></div>
+        <p>dos egressos de enfermagem apontaram a falta de experiência como recém-formado como dificuldade para entrar no mercado.</p>
+        <div class="bar"><i data-w="83.5"></i></div>
+      </div>
+      <div class="stat reveal d2">
+        <div class="num"><span data-count="40">0</span><small>%</small></div>
+        <p>tiveram dificuldades no próprio processo seletivo.</p>
+        <div class="bar"><i data-w="40"></i></div>
+      </div>
+      <p class="src">Fonte: estudo com egressos de enfermagem.</p>
+    </div>
+  </div>
+</section>
+
+<div class="band"><div class="container"><p>O mercado não vê apenas quem tem formação. Ele percebe quem está preparado.</p></div></div>
+
+<!-- ================= ANTES x DEPOIS ================= -->
+<section class="transform">
+  <div class="container center">
+    <span class="eyebrow reveal">A virada</span>
+    <h2 class="reveal d1">Antes e depois da imersão</h2>
+    <div class="toggle reveal d2" id="baToggle">
+      <span class="pill"></span>
+      <button class="on" data-v="before">Antes</button>
+      <button data-v="after">Depois</button>
+    </div>
+    <div class="ba-wrap focus-before" id="baWrap" style="text-align:left">
+      <div class="ba before reveal">
+        <h3>❌ Antes da imersão</h3>
+        <ul>
+          <li><span class="ic">✕</span>Não sabe se o currículo realmente está pronto para uma vaga</li>
+          <li><span class="ic">✕</span>Envia currículos e quase nunca recebe retorno</li>
+          <li><span class="ic">✕</span>Tem medo de chegar na entrevista e não saber o que responder</li>
+          <li><span class="ic">✕</span>Não sabe onde procurar vagas ou como se posicionar nas plataformas</li>
+          <li><span class="ic">✕</span>Fica inseguro(a) em provas teóricas ou avaliações práticas</li>
+          <li><span class="ic">✕</span>Acredita que não ter experiência significa não ter chances</li>
+        </ul>
+      </div>
+      <div class="ba after reveal d1">
+        <h3>✅ Depois da imersão</h3>
+        <ul>
+          <li><span class="ic">✓</span>Sabe estruturar um currículo voltado para o primeiro emprego</li>
+          <li><span class="ic">✓</span>Entende onde procurar oportunidades e como aumentar suas chances de ser chamado(a)</li>
+          <li><span class="ic">✓</span>Sabe como se preparar e se posicionar durante uma entrevista</li>
+          <li><span class="ic">✓</span>Entende o que revisar para provas teóricas e avaliações práticas</li>
+          <li><span class="ic">✓</span>Chega aos processos seletivos com muito mais clareza e segurança</li>
+          <li><span class="ic">✓</span>Valoriza estrategicamente tudo o que já construiu na enfermagem</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:44px" class="reveal"><a href="#ingresso" class="btn">Garanta seu ingresso agora <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ================= FEEDBACKS (CARROSSEL) ================= -->
+<section class="results" id="resultados">
+  <div class="container center">
+    <span class="eyebrow reveal">Resultados reais</span>
+    <h2 class="reveal d1">Esses foram os resultados de quem aplicou tudo o que eu vou falar nessa imersão</h2>
+    <div class="carousel reveal d2" id="carousel">
+      <div class="viewport"><div class="track" id="track"></div></div>
+      <div class="c-nav">
+        <button class="c-btn" id="prev" aria-label="Anterior"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div class="dots" id="dots"></div>
+        <button class="c-btn" id="next" aria-label="Próximo"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox"><img alt="Feedback ampliado"></div>
+
+<!-- ================= MÓDULOS ================= -->
+<section class="modules">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow reveal">Conteúdo</span>
+      <h2 class="reveal d1">O que você vai aprender na imersão?</h2>
+    </div>
+    <div class="mod-grid">
+      <div class="mod reveal">
+        <span class="n">01</span>
+        <div class="icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg></div>
+        <h3>Currículo</h3>
+        <p>Como transformar sua formação em um currículo que valorize o que você já construiu, mesmo sem experiência profissional.</p>
+      </div>
+      <div class="mod reveal d1">
+        <span class="n">02</span>
+        <div class="icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+        <h3>Plataformas</h3>
+        <p>Como encontrar oportunidades e personalizar seu perfil nas principais plataformas para ser encontrado(a) e chamado(a).</p>
+      </div>
+      <div class="mod reveal d2">
+        <span class="n">03</span>
+        <div class="icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 5h11v8H8l-4 3z"/><path d="M15 9h5v8l-3-2h-6v-2"/></svg></div>
+        <h3>Entrevistas</h3>
+        <p>Como se preparar para as perguntas do RH e do gestor, responder com segurança e mostrar que você está pronto(a) para a vaga.</p>
+      </div>
+      <div class="mod reveal d3">
+        <span class="n">04</span>
+        <div class="icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></div>
+        <h3>Provas teóricas e práticas</h3>
+        <p>O que revisar e como se preparar para as avaliações que aparecem nos processos seletivos de enfermagem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUEM ================= -->
+<section class="forwho">
+  <div class="container forwho-grid">
+    <div class="sticky reveal">
+      <span class="eyebrow">Para quem é</span>
+      <h2>Essa imersão é para você que…</h2>
+      <p class="lead" style="margin-bottom:30px">Quer parar de depender da sorte e ter um caminho claro para conquistar sua primeira oportunidade na enfermagem.</p>
+      <a href="#ingresso" class="btn">Quero participar <span class="arrow">→</span></a>
+    </div>
+    <div class="checks">
+      <div class="check reveal"><span class="ic">✓</span>Está na graduação de Enfermagem e já quer começar a se preparar para o mercado</div>
+      <div class="check reveal"><span class="ic">✓</span>Está no final da faculdade e sente que ainda não sabe como conseguir o primeiro emprego</div>
+      <div class="check reveal"><span class="ic">✓</span>É recém-formado(a), envia currículos, mas não consegue avançar nos processos seletivos</div>
+      <div class="check reveal"><span class="ic">✓</span>Já participou de entrevistas ou provas e percebeu que não estava preparado(a) como gostaria</div>
+      <div class="check reveal"><span class="ic">✓</span>Tem medo de não ter experiência suficiente para conseguir sua primeira oportunidade</div>
+      <div class="check reveal"><span class="ic">✓</span>Quer aprender a estruturar o currículo, encontrar vagas, se preparar para entrevistas e entender o que cai nas avaliações</div>
+      <div class="check reveal"><span class="ic">✓</span>Quer parar de depender da sorte e ter um caminho mais claro até o primeiro emprego</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROFESSORA ================= -->
+<section class="teacher" id="professora">
+  <div class="container teacher-grid">
+    <div class="photo-frame reveal">
+      <div class="photo">
+        <!-- FOTO DA PROFESSORA: coloque o arquivo em img/professora.jpg -->
+        <img src="img/professora.jpg" alt="Mariana Von Held, enfermeira e mentora" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="ph" style="display:none">
+          <svg width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+          Espaço para sua foto<br><code>img/professora.jpg</code>
+        </div>
+      </div>
+      <div class="photo-tag"><b>+300</b><span>profissionais recolocados</span></div>
+    </div>
+    <div class="reveal d1">
+      <span class="eyebrow">Quem será sua professora?</span>
+      <h2>Mariana Von Held <small>Enfermeira · graduada pela UFRJ · mentora</small></h2>
+      <p>Criadora de conteúdo e mentora para profissionais e acadêmicos de enfermagem há mais de 5 anos.</p>
+      <p>Ao longo dessa trajetória, já ajudei mais de 300 profissionais a se recolocarem no mercado de trabalho, através da construção de currículos de impacto e de mudanças estratégicas no comportamento e posicionamento durante entrevistas e processos seletivos.</p>
+      <p>Agora, vou colocar essa experiência em prática com você, mostrando não apenas como montar um currículo, mas como se preparar para cada etapa do caminho até conquistar seu primeiro emprego na enfermagem.</p>
+      <div class="creds">
+        <div><b>UFRJ</b><span>Formação</span></div>
+        <div><b>5+ anos</b><span>de mentoria</span></div>
+        <div><b>300+</b><span>profissionais</span></div>
+      </div>
+      <a href="#ingresso" class="btn">Garanta agora seu ingresso <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section class="offer" id="ingresso">
+  <div class="container center">
+    <span class="eyebrow reveal">Lote 1 · vagas com valor promocional</span>
+    <h2 class="reveal d1">Garanta o seu ingresso agora</h2>
+    <div class="ticket reveal d2" style="text-align:left">
+      <div class="ticket-main">
+        <h3>Imersão Rota do Primeiro Emprego na Enfermagem</h3>
+        <p class="sub">com Mariana Von Held</p>
+        <ul>
+          <li><span class="ic"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>+ de 8h de conteúdo prático</li>
+          <li><span class="ic"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/></svg></span>Materiais complementares da imersão</li>
+          <li><span class="ic"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></span>Tira-dúvidas com a professora ao vivo</li>
+        </ul>
+        <div class="ticket-info">
+          <div><span>Data</span><b>12/12</b></div>
+          <div><span>Horário</span><b>09h – 17h</b></div>
+          <div><span>Local</span><b>Google Meet</b></div>
+        </div>
+      </div>
+      <div class="ticket-stub">
+        <span class="lote">LOTE 1</span>
+        <s>De R$ 197</s>
+        <span style="font-weight:600">por apenas</span>
+        <div class="pr"><sup>R$</sup>19</div>
+        <div class="save">Economia de R$ 178</div>
+        <a href="#" class="btn js-checkout">Comprar ingresso <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="offer-timer reveal" aria-live="polite">
+      <div class="u"><b data-t="d">00</b><span>Dias</span></div>
+      <div class="u"><b data-t="h">00</b><span>Horas</span></div>
+      <div class="u"><b data-t="m">00</b><span>Min</span></div>
+      <div class="u"><b data-t="s">00</b><span>Seg</span></div>
+    </div>
+    <p class="offer-note" id="offerNote">para o fim do valor promocional do Lote 1</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow reveal">Dúvidas frequentes</span>
+      <h2 class="reveal d1">Ainda ficou alguma dúvida?</h2>
+    </div>
+    <div class="faq-list" id="faq">
+      <div class="qa reveal"><button>“Mas eu ainda não tenho experiência. Essa imersão é para mim?”<span class="plus">+</span></button><div class="ans"><div><p>Sim. Na verdade, esse é justamente um dos principais motivos para você participar. Vamos mostrar como valorizar sua formação, estágios, cursos e experiências acadêmicas para construir uma apresentação profissional mais estratégica, mesmo que você ainda não tenha experiência formal.</p></div></div></div>
+      <div class="qa reveal"><button>“Eu já tenho um currículo. Preciso participar?”<span class="plus">+</span></button><div class="ans"><div><p>Ter um currículo não significa necessariamente ter um currículo preparado para conquistar oportunidades. Na imersão, você vai entender o que precisa ser valorizado, o que pode estar prejudicando sua apresentação e como tornar seu currículo mais estratégico para os processos seletivos.</p></div></div></div>
+      <div class="qa reveal"><button>“Eu ainda estou na faculdade. É muito cedo para começar?”<span class="plus">+</span></button><div class="ans"><div><p>Não. Quanto antes você começar, melhor. A ideia é justamente evitar que você chegue ao final da graduação sem saber como procurar vagas, se apresentar e enfrentar um processo seletivo.</p></div></div></div>
+      <div class="qa reveal"><button>“E se eu já sou formado(a) e ainda não consegui emprego?”<span class="plus">+</span></button><div class="ans"><div><p>Essa imersão foi pensada também para você. Vamos trabalhar justamente os pontos que podem estar dificultando sua entrada no mercado: currículo, candidatura, entrevista e preparação para avaliações teóricas e práticas.</p></div></div></div>
+      <div class="qa reveal"><button>“Vou aprender apenas sobre currículo?”<span class="plus">+</span></button><div class="ans"><div><p>Não. O currículo é apenas uma das etapas. Você também vai aprender sobre plataformas de vagas, personalização do perfil, entrevistas com RH e gestores, além da preparação para provas teóricas e práticas.</p></div></div></div>
+      <div class="qa reveal"><button>“Preciso ter algum conhecimento específico para participar?”<span class="plus">+</span></button><div class="ans"><div><p>Não. A imersão foi criada para acadêmicos, recém-formados e profissionais que querem se preparar melhor para conquistar oportunidades na enfermagem.</p></div></div></div>
+      <div class="qa reveal"><button>“A imersão garante que eu vou conseguir um emprego?”<span class="plus">+</span></button><div class="ans"><div><p>A decisão final depende de cada processo seletivo e da empresa. O que fazemos é aumentar sua preparação, clareza e segurança para você chegar muito mais preparado(a) às oportunidades.</p></div></div></div>
+      <div class="qa reveal"><button>“Quando e onde será a imersão?”<span class="plus">+</span></button><div class="ans"><div><p>Dia 12/12, ao vivo, das 09h às 17h, via Google Meet.</p></div></div></div>
+      <div class="qa reveal"><button>“Quanto custa?”<span class="plus">+</span></button><div class="ans"><div><p>No Lote 1, o ingresso sai de R$ 197 por apenas <b>R$ 19</b>, enquanto o valor promocional estiver ativo.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final">
+  <div class="container">
+    <h2 class="reveal">Pare de se perguntar <em class="hl">“será que eu vou conseguir meu primeiro emprego?”</em></h2>
+    <p class="lead reveal d1">Comece a entender exatamente o que precisa fazer para estar preparado(a) quando a oportunidade aparecer. Essa imersão foi feita para você.</p>
+    <a href="#ingresso" class="btn reveal d2">Garantir meu ingresso por R$ 19 <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Mariana Von Held · Imersão Rota do Primeiro Emprego na Enfermagem</footer>
+
+<div class="float-cta" id="floatCta"><a href="#ingresso" class="btn">Garantir por R$ 19 →</a></div>
+
+<!-- ================= POP-UP DE TEMPO ================= -->
+<div class="modal-bg" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal">
+    <button class="x" id="mClose" aria-label="Fechar">×</button>
+    <div class="clock"><svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></div>
+    <h3 id="mTitle">O valor promocional está acabando!</h3>
+    <p>Você tem <b id="mHours">-- horas</b> para se inscrever por <b>R$ 19</b> em vez de R$ 197.</p>
+    <div class="m-timer">
+      <div class="u"><b data-t="d">00</b><span>Dias</span></div>
+      <div class="u"><b data-t="h">00</b><span>Horas</span></div>
+      <div class="u"><b data-t="m">00</b><span>Min</span></div>
+      <div class="u"><b data-t="s">00</b><span>Seg</span></div>
+    </div>
+    <a href="#" class="btn js-checkout">Quero garantir minha vaga</a>
+    <button class="later" id="mLater">Agora não</button>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   ⚙️  CONFIGURAÇÕES — edite aqui
+   ===================================================================== */
+const CONFIG = {
+  // Link do checkout (Hotmart, Kiwify, Eduzz…)
+  checkoutUrl: "#",
+
+  // Data e hora em que o valor promocional (Lote 1) termina — horário de Brasília (-03:00)
+  promoEnd: "2026-11-30T23:59:00-03:00",
+
+  // Quantidade de prints de feedback na pasta img/ (feedback1.jpg, feedback2.jpg, …)
+  feedbackCount: 8,
+  feedbackExt: "jpg",          // troque para "png" se seus prints forem PNG
+
+  // Pop-up de tempo: segundos até aparecer
+  popupDelay: 6,
+
+  // Carrossel: troca de página automática (ms). 0 desliga.
+  autoplay: 5000
+};
+/* ===================================================================== */
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Links de compra
+document.querySelectorAll('.js-checkout').forEach(a => {
+  a.href = CONFIG.checkoutUrl;
+  if (CONFIG.checkoutUrl === '#') a.href = '#ingresso';
+  else { a.target = '_blank'; a.rel = 'noopener'; }
+});
+
+/* ---------- Contagem regressiva ---------- */
+const end = new Date(CONFIG.promoEnd).getTime();
+const pad = n => String(n).padStart(2, '0');
+function tick(){
+  let diff = Math.max(0, end - Date.now());
+  const totalH = Math.floor(diff / 36e5);
+  const d = Math.floor(diff / 864e5);
+  const h = Math.floor(diff % 864e5 / 36e5);
+  const m = Math.floor(diff % 36e5 / 6e4);
+  const s = Math.floor(diff % 6e4 / 1e3);
+  document.querySelectorAll('[data-t="d"]').forEach(e => e.textContent = pad(d));
+  document.querySelectorAll('[data-t="h"]').forEach(e => e.textContent = pad(h));
+  document.querySelectorAll('[data-t="m"]').forEach(e => e.textContent = pad(m));
+  document.querySelectorAll('[data-t="s"]').forEach(e => e.textContent = pad(s));
+  document.querySelectorAll('[data-timer="compact"]').forEach(e => e.textContent = (d ? d + 'd ' : '') + pad(h) + ':' + pad(m) + ':' + pad(s));
+  const mh = document.getElementById('mHours');
+  if (totalH >= 48) mh.textContent = d + ' dias e ' + h + (h === 1 ? ' hora' : ' horas');
+  else if (totalH >= 1) mh.textContent = totalH + (totalH === 1 ? ' hora' : ' horas');
+  else mh.textContent = m + (m === 1 ? ' minuto' : ' minutos');
+  if (diff === 0){
+    document.getElementById('offerNote').textContent = 'O valor promocional do Lote 1 foi encerrado.';
+    document.getElementById('topbar').style.display = 'none';
+    return false;
+  }
+  return true;
+}
+tick();
+const timerId = setInterval(() => { if (!tick()) clearInterval(timerId); }, 1000);
+
+/* ---------- Pop-up ---------- */
+const modal = document.getElementById('modal');
+const closeModal = () => { modal.classList.remove('open'); try{ sessionStorage.setItem('popupSeen','1'); }catch(e){} };
+let seen = false; try{ seen = sessionStorage.getItem('popupSeen') === '1'; }catch(e){}
+if (!seen && end > Date.now()) setTimeout(() => modal.classList.add('open'), CONFIG.popupDelay * 1000);
+document.getElementById('mClose').onclick = closeModal;
+document.getElementById('mLater').onclick = closeModal;
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+modal.querySelector('.js-checkout').addEventListener('click', closeModal);
+document.addEventListener('keydown', e => { if (e.key === 'Escape'){ closeModal(); lb.classList.remove('open'); } });
+
+/* ---------- Topbar + CTA flutuante ---------- */
+const topbar = document.getElementById('topbar'), floatCta = document.getElementById('floatCta');
+const offer = document.getElementById('ingresso');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  topbar.classList.toggle('show', y > window.innerHeight * .7);
+  const r = offer.getBoundingClientRect();
+  const inOffer = r.top < window.innerHeight && r.bottom > 0;
+  floatCta.classList.toggle('show', y > window.innerHeight * .7 && !inOffer);
+}, { passive:true });
+
+/* ---------- Reveal + contadores ---------- */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    en.target.classList.add('in');
+    en.target.querySelectorAll('[data-count]').forEach(countUp);
+    en.target.querySelectorAll('[data-w]').forEach(b => b.style.width = b.dataset.w + '%');
+    io.unobserve(en.target);
+  });
+}, { threshold:.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+function countUp(el){
+  const to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), t0 = performance.now(), dur = 1600;
+  (function f(t){
+    const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = (to * e).toFixed(dec).replace('.', ',');
+    if (p < 1) requestAnimationFrame(f);
+  })(t0);
+}
+
+/* ---------- Antes x Depois ---------- */
+const baT = document.getElementById('baToggle'), baW = document.getElementById('baWrap');
+baT.querySelectorAll('button').forEach(b => b.onclick = () => {
+  baT.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+  baT.classList.toggle('after', b.dataset.v === 'after');
+  baW.className = 'ba-wrap focus-' + b.dataset.v;
+});
+
+/* ---------- FAQ ---------- */
+document.querySelectorAll('.qa button').forEach(b => b.onclick = () => {
+  const qa = b.parentElement, open = qa.classList.contains('open');
+  document.querySelectorAll('.qa').forEach(q => q.classList.remove('open'));
+  if (!open) qa.classList.add('open');
+});
+
+/* ---------- Carrossel de feedbacks ---------- */
+const track = document.getElementById('track'), dotsEl = document.getElementById('dots');
+const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+lb.onclick = () => lb.classList.remove('open');
+const shots = Array.from({ length: CONFIG.feedbackCount }, (_, i) => `img/feedback${i + 1}.${CONFIG.feedbackExt}`);
+let per = 3, page = 0, pages = 1, auto;
+
+function perPage(){ return window.innerWidth < 640 ? 1 : window.innerWidth < 980 ? 2 : 3; }
+function build(){
+  per = perPage(); pages = Math.ceil(shots.length / per); page = Math.min(page, pages - 1);
+  track.innerHTML = ''; dotsEl.innerHTML = '';
+  for (let p = 0; p < pages; p++){
+    const pg = document.createElement('div'); pg.className = 'page'; pg.style.setProperty('--per', per);
+    shots.slice(p * per, p * per + per).forEach((src, k) => {
+      const n = p * per + k + 1;
+      const card = document.createElement('div'); card.className = 'shot';
+      card.innerHTML = `<img src="${src}" alt="Feedback de aluno ${n}" loading="lazy">`;
+      const img = card.querySelector('img');
+      img.onerror = () => { card.style.cursor = 'default'; card.innerHTML = `<div class="ph"><svg width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 8"/></svg>Espaço para o print ${n}<code>${src}</code></div>`; };
+      card.onclick = () => { if (card.querySelector('img')){ lbImg.src = src; lb.classList.add('open'); } };
+      pg.appendChild(card);
+    });
+    track.appendChild(pg);
+    const d = document.createElement('button'); d.setAttribute('aria-label', 'Página ' + (p + 1));
+    d.onclick = () => { go(p); restart(); }; dotsEl.appendChild(d);
+  }
+  go(page);
+}
+function go(p){
+  page = (p + pages) % pages;
+  track.style.transform = `translateX(-${page * 100}%)`;
+  [...dotsEl.children].forEach((d, i) => d.classList.toggle('on', i === page));
+}
+function restart(){ clearInterval(auto); if (CONFIG.autoplay) auto = setInterval(() => go(page + 1), CONFIG.autoplay); }
+document.getElementById('prev').onclick = () => { go(page - 1); restart(); };
+document.getElementById('next').onclick = () => { go(page + 1); restart(); };
+const car = document.getElementById('carousel');
+car.addEventListener('mouseenter', () => clearInterval(auto));
+car.addEventListener('mouseleave', restart);
+let sx = null;
+car.addEventListener('touchstart', e => sx = e.touches[0].clientX, { passive:true });
+car.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40){ go(page + (dx < 0 ? 1 : -1)); restart(); } sx = null; });
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (perPage() !== per) build(); }, 150); });
+build(); restart();
+</script>
+</body>
+</html>
