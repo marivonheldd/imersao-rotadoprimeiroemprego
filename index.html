@@ -513,11 +513,11 @@ footer{border-top:1px solid rgba(230,232,230,.08);padding:28px 0;text-align:cent
   <div class="container teacher-grid">
     <div class="photo-frame reveal">
       <div class="photo">
-        <!-- FOTO DA PROFESSORA: coloque o arquivo em img/professora.jpeg -->
-        <img src="img/professora.jpeg" alt="Mariana Von Held, enfermeira e mentora" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <!-- FOTO DA PROFESSORA: coloque o arquivo em professora.jpeg -->
+        <img src="professora.jpeg" alt="Mariana Von Held, enfermeira e mentora" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="ph" style="display:none">
           <svg width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
-          Espaço para sua foto<br><code>img/professora.jpeg</code>
+          Espaço para sua foto<br><code>professora.jpeg</code>
         </div>
       </div>
       <div class="photo-tag"><b>+300</b><span>profissionais recolocados</span></div>
@@ -545,11 +545,11 @@ footer{border-top:1px solid rgba(230,232,230,.08);padding:28px 0;text-align:cent
     <h2 class="reveal d1">Garanta o seu ingresso agora</h2>
     <div class="offer-grid">
     <div class="mock reveal d1">
-      <!-- MOCKUP DO INGRESSO: coloque o arquivo em img/ingresso.jpeg -->
-      <img src="img/ingresso.jpeg" alt="Mockup do ingresso da Imersão Rota do Primeiro Emprego na Enfermagem" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <!-- MOCKUP DO INGRESSO: coloque o arquivo em ingresso.jpeg -->
+      <img src="ingresso.jpeg" alt="Mockup do ingresso da Imersão Rota do Primeiro Emprego na Enfermagem" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="ph" style="display:none">
         <svg width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 8a2 2 0 012-2h14a2 2 0 012 2v2a2 2 0 000 4v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 000-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>
-        Espaço para o mockup do ingresso<br><code>img/ingresso.jpeg</code>
+        Espaço para o mockup do ingresso<br><code>ingresso.jpeg</code>
       </div>
     </div>
     <div class="ticket reveal d2" style="text-align:left">
@@ -645,12 +645,12 @@ footer{border-top:1px solid rgba(230,232,230,.08);padding:28px 0;text-align:cent
    ===================================================================== */
 const CONFIG = {
   // Link do checkout (Hotmart, Kiwify, Eduzz…)
-  checkoutUrl: "#",
+  checkoutUrl: "https://pay.kiwify.com.br/qoon0rq",
 
   // Data e hora em que o valor promocional (Lote 1) termina — horário de Brasília (-03:00)
   promoEnd: "2026-11-30T23:59:00-03:00",
 
-  // Quantidade de prints de feedback na pasta img/ (feedback1.jpeg, feedback2.jpeg, …)
+  // Quantidade de prints de feedback na mesma pasta do index.html (feedback1.jpeg, feedback2.jpeg, …)
   feedbackCount: 8,
   feedbackExt: "jpeg",         // troque se seus prints tiverem outra extensão
 
@@ -761,7 +761,7 @@ document.querySelectorAll('.qa button').forEach(b => b.onclick = () => {
 const track = document.getElementById('track'), dotsEl = document.getElementById('dots');
 const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
 lb.onclick = () => lb.classList.remove('open');
-const shots = Array.from({ length: CONFIG.feedbackCount }, (_, i) => `img/feedback${i + 1}.${CONFIG.feedbackExt}`);
+const shots = Array.from({ length: CONFIG.feedbackCount }, (_, i) => `feedback${i + 1}.${CONFIG.feedbackExt}`);
 let per = 3, page = 0, pages = 1, auto;
 
 function perPage(){ return window.innerWidth < 640 ? 1 : window.innerWidth < 980 ? 2 : 3; }
